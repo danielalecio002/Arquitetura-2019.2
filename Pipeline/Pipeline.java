@@ -59,8 +59,8 @@ public class Pipeline {
         public void run() {
             int i = 1;
             while(i <= NumTarefas){
-                //para a execução em ordem da terceira thread é necessario atrasar ela em 2003 milesimo 
-                //porem a partir do segundo caso será necessário um atraso diferente que é 1003 milesimos  
+                //para a execução em ordem da terceira thread é necessario atrasar ela em 2003 ms
+                //porem a partir do segundo caso será necessário um atraso diferente que é 1003 ms  
              if(i == 1){
                 try {
                  Thread.sleep(2003);
@@ -119,7 +119,7 @@ public class Pipeline {
         public void run() {
             int i = 1;
             while(i <= NumTarefas){
-          if(i == 1){// a quinta thread como será a ultima a ser executada ela tem um atraso ainda mais relevante
+          if(i == 1){// A quinta thread como será a ultima a ser executada ela tem um atraso ainda mais relevante
             try {
                  Thread.sleep(4010);
                 } catch (InterruptedException ex) {
@@ -141,7 +141,7 @@ public class Pipeline {
             }        
         }
     };   
-     //Execucanto as Threads
+     //Executando as Threads
            t1.start();
            t2.start();
            t3.start();
